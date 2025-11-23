@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/edb1f56e7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nexalance Test</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #000;
+      }
+      main {
+        margin: 0 auto;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+      }
+      .widget {
+        display: flex;
+        align-items: center;
+        flex: 1 1 200px;
+        margin: 10px;
+      }
+      .widget .media {
+        font-size: 40px;
+        color: #333;
+        margin-right: 15px;
+      }
+      .content h4 {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+      }
+      .content p {
+        font-size: 14px;
+        margin: 0;
+        color: #555;
+      }
+      .grid {
+        display: grid;
+        gap: 40px;
+      }
+      .my-40 {
+        margin-block-start: 40px;
+        margin-block-end: 40px;
+      }
+      .grid.items-center {
+        align-items: center;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .grid.col-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid.col-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid.row-2 {
+        grid-template-rows: repeat(2, auto);
+      }
+      .grid.w-2\/3 {
+        grid-column: span 2;
+      }
+      .grid.w-1\/3 {
+        grid-column: span 1;
+      }
+      .product-card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+      }
+      .product-card .media {
+        height: 400px;
+        overflow: hidden;
+      }
+      .product-card .content {
+        padding: 15px;
+      }
+      .product-card .content h3 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+      }
+      .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+      button {
+        background-color: #2e0d5f;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 60px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .text-bold {
+        font-weight: bold;
+      }
+      .space-y-20 > * {
+        margin-top: 20px;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .ml-auto {
+        margin-left: auto;
+      }
+      .flex.gap-5 {
+        gap: 5px;
+      }
+      .text-yellow {
+        color: #ffcc00;
+      }
+
+      @media (min-width: 769px) {
+        .md-text-right {
+          text-align: right;
+        }
+        .grid-products {
+          gap: 20px;
+        }
+        .grid.md-col-3 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .grid.md-col-2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .grid.md-row-2 {
+          grid-template-rows: repeat(2, auto);
+        }
+      }
+      @media (max-width: 768px) {
+        .grid.col-3 {
+          grid-template-columns: 1fr;
+        }
+        .grid.col-1 {
+          grid-template-columns: 1fr;
+        }
+        .grid.w-1\/3 {
+          grid-column: span 1;
+        }
+        .text-right {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="grid col-3 items-center my-40">
+          <div class="grid-products grid col-1 md-col-2 md-row-2 w-2/3">
+            <div class="product-card">
+              <div class="media">
+                <img
+                  src="https://images.unsplash.com/photo-1614619526941-e1539b30f315?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNob2NvbGF0ZSUyMGJveCUyMGFuZCUyMGJlYXJ8ZW58MHwxfDB8fHww"
+                  alt="Product 1"
+                />
+              </div>
+              <div class="content">
+                <h3>Chokolade + bamse</h3>
+                <p class="price">129,00 kr</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="media">
+                <img
+                  src="https://images.unsplash.com/photo-1614619526941-e1539b30f315?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNob2NvbGF0ZSUyMGJveCUyMGFuZCUyMGJlYXJ8ZW58MHwxfDB8fHww"
+                  alt="Product 2"
+                />
+              </div>
+              <div class="content">
+                <h3>Champagneflaske</h3>
+                <p class="price">179,00 kr</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="media">
+                <img
+                  src="https://images.unsplash.com/photo-1614619526941-e1539b30f315?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNob2NvbGF0ZSUyMGJveCUyMGFuZCUyMGJlYXJ8ZW58MHwxfDB8fHww"
+                  alt="Product 3"
+                />
+              </div>
+              <div class="content">
+                <h3>Hjerte m. Kaerligheds Mix</h3>
+                <p class="price">149,00 kr</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="media">
+                <img
+                  src="https://images.unsplash.com/photo-1614619526941-e1539b30f315?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNob2NvbGF0ZSUyMGJveCUyMGFuZCUyMGJlYXJ8ZW58MHwxfDB8fHww"
+                  alt="Product 4"
+                />
+              </div>
+              <div class="content">
+                <h3>Hjerteaeske + bamse</h3>
+                <p class="price">229,00 kr</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-content w-1/3 text-center md-text-right space-y-20">
+            <h1>
+              <i class="fa-solid fa-gift"></i> Graver til livets saerlige
+              ojeblikke!
+            </h1>
+            <p>
+              Uanset om du skal fejre fodselsdag, jubilaeum, ny bolig,
+              kaerlighed eller bare vil sende en sod tanke - sa har vi gaven,
+              der siger det hele! Vaelge mellem sjove, sode og personlige
+              gaveideer, der spreder smil og glaede hos bade ham og hende. Vaelg
+              en af de sode gaver till venstre eller......
+            </p>
+            <button class="flex text-bold self-right ml-auto gap-5">
+              Mix din perfekte gave her
+              <i class="fa-solid fa-hand-point-right text-yellow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flex flex-wrap widgets justify-center gap-20">
+          <!-- widget one -->
+          <div class="widget">
+            <div class="media">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="content">
+              <h4>Gratis fragt</h4>
+              <p>Kab for over Kr. og fa gratis fragt</p>
+            </div>
+          </div>
+          <!-- widget two -->
+          <div class="widget">
+            <div class="media">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="content">
+              <h4>Vi sender i dag</h4>
+              <p>Bestill inden 14:00 (Alle hverdage)</p>
+            </div>
+          </div>
+          <!-- widget three -->
+          <div class="widget">
+            <div class="media">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <div class="content">
+              <h4>Kaempe udvalg</h4>
+              <p>+450 varianter direkte fra fabrikken</p>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="media">
+              <i class="fa-solid fa-faucet-drip"></i>
+            </div>
+            <div class="content">
+              <h4>100% hygiejnisk</h4>
+              <p>Pakket med handsker og harnet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
